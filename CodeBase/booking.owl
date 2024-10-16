@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:ex="http://example.org/booking.owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://example.org/booking.owl"/>
+
+    <!-- Class Definitions -->
+    <owl:Class rdf:about="http://example.org/booking.owl#Seat"/>
+    <owl:Class rdf:about="http://example.org/booking.owl#Booking"/>
+
+    <!-- Object Property Definitions -->
+    <owl:ObjectProperty rdf:about="http://example.org/booking.owl#hasSeat">
+        <rdfs:domain rdf:resource="http://example.org/booking.owl#Booking"/>
+        <rdfs:range rdf:resource="http://example.org/booking.owl#Seat"/>
+    </owl:ObjectProperty>
+
+    <!-- Datatype Property Definitions -->
+    <owl:DatatypeProperty rdf:about="http://example.org/booking.owl#isAvailable">
+        <rdfs:domain rdf:resource="http://example.org/booking.owl#Seat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+
+    <!-- Individual Definitions -->
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat1">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat2">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat3">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat4">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat5">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat6">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat7">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat8">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat9">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+    <ex:Seat rdf:about="http://example.org/booking.owl#Seat10">
+        <ex:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ex:isAvailable>
+    </ex:Seat>
+</rdf:RDF>

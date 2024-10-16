@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:movie="http://example.org/movie#">
+
+    <!-- Define ontology -->
+    <rdf:Description rdf:about="http://example.org/movie">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+        <rdfs:label>Movie Ontology</rdfs:label>
+    </rdf:Description>
+
+    <!-- Define classes -->
+    <rdf:Description rdf:about="http://example.org/movie#Movie">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Movie</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Actor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Actor</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Director">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label>Director</rdfs:label>
+    </rdf:Description>
+
+    <!-- Define properties -->
+    <rdf:Description rdf:about="http://example.org/movie#hasActor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:label>hasActor</rdfs:label>
+        <rdfs:domain rdf:resource="http://example.org/movie#Movie"/>
+        <rdfs:range rdf:resource="http://example.org/movie#Actor"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#hasDirector">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:label>hasDirector</rdfs:label>
+        <rdfs:domain rdf:resource="http://example.org/movie#Movie"/>
+        <rdfs:range rdf:resource="http://example.org/movie#Director"/>
+    </rdf:Description>
+
+    <!-- Define instances (movies) -->
+    <rdf:Description rdf:about="http://example.org/movie#Inception">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#LeonardoDiCaprio"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#ChristopherNolan"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#TheDarkKnight">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#ChristianBale"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#ChristopherNolan"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Interstellar">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#MatthewMcConaughey"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#ChristopherNolan"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Titanic">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#LeonardoDiCaprio"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#JamesCameron"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#PulpFiction">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#JohnTravolta"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#QuentinTarantino"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Avatar">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#SamWorthington"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#JamesCameron"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#TheMatrix">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#KeanuReeves"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#TheWachowskis"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#FightClub">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#BradPitt"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#DavidFincher"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#Memento">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#GuyPearce"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#ChristopherNolan"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#DjangoUnchained">
+        <rdf:type rdf:resource="http://example.org/movie#Movie"/>
+        <movie:hasActor rdf:resource="http://example.org/movie#JamieFoxx"/>
+        <movie:hasDirector rdf:resource="http://example.org/movie#QuentinTarantino"/>
+    </rdf:Description>
+
+    <!-- Define instances (actors) -->
+    <rdf:Description rdf:about="http://example.org/movie#LeonardoDiCaprio">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Leonardo DiCaprio</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#ChristianBale">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Christian Bale</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#MatthewMcConaughey">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Matthew McConaughey</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#SamWorthington">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Sam Worthington</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#KeanuReeves">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Keanu Reeves</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#BradPitt">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Brad Pitt</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#GuyPearce">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Guy Pearce</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#JamieFoxx">
+        <rdf:type rdf:resource="http://example.org/movie#Actor"/>
+        <rdfs:label>Jamie Foxx</rdfs:label>
+    </rdf:Description>
+
+    <!-- Define instances (directors) -->
+    <rdf:Description rdf:about="http://example.org/movie#ChristopherNolan">
+        <rdf:type rdf:resource="http://example.org/movie#Director"/>
+        <rdfs:label>Christopher Nolan</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#JamesCameron">
+        <rdf:type rdf:resource="http://example.org/movie#Director"/>
+        <rdfs:label>James Cameron</rdfs:label>
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="http://example.org/movie#QuentinTarantino">
+        <rdf:type rdf:resource="http://example.org/movie#Director"/>
+        <rdfs:label>Quentin Tarantino</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#DavidFincher">
+        <rdf:type rdf:resource="http://example.org/movie#Director"/>
+        <rdfs:label>David Fincher</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://example.org/movie#TheWachowskis">
+        <rdf:type rdf:resource="http://example.org/movie#Director"/>
+        <rdfs:label>The Wachowskis</rdfs:label>
+    </rdf:Description>
+
+</rdf:RDF>
+

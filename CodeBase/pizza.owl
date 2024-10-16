@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:pizza="http://www.example.org/pizza#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.org/pizza"/>
+
+    <!-- Define the Pizza class -->
+    <owl:Class rdf:about="http://www.example.org/pizza#Pizza"/>
+
+    <!-- Define specific pizza types as subclasses of Pizza -->
+    <owl:Class rdf:about="http://www.example.org/pizza#Margherita">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#Pepperoni">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#Vegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#Seafood">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#BBQChicken">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#Hawaiian">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#Classic">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#StuffedCrust">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.example.org/pizza#GlutenFree">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/pizza#Pizza"/>
+    </owl:Class>
+
+    <!-- Define instances of pizzas -->
+    <rdf:Description rdf:about="http://www.example.org/pizza#ClassicMargherita">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Margherita"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#MargheritaDeluxe">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Margherita"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#PepperoniPizza">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Pepperoni"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#VegetarianSpecial">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Vegetarian"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#SeafoodDelight">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Seafood"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#BBQChickenSupreme">
+        <rdf:type rdf:resource="http://www.example.org/pizza#BBQChicken"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#HawaiianClassic">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Hawaiian"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#ClassicCheese">
+        <rdf:type rdf:resource="http://www.example.org/pizza#Classic"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#StuffedCrustDeluxe">
+        <rdf:type rdf:resource="http://www.example.org/pizza#StuffedCrust"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.example.org/pizza#GlutenFreeVeggie">
+        <rdf:type rdf:resource="http://www.example.org/pizza#GlutenFree"/>
+    </rdf:Description>
+
+</rdf:RDF>
